@@ -15,3 +15,23 @@ Introduction to Testing in Go (Golang)
 ### installing docker
 
 - Install [docker](https://www.docker.com/)
+
+
+### test files live right next to the application
+
+1. navigate to folder
+
+2. run go app.
+```bash
+    go run . 
+```
+3. run go test.
+```bash
+    go test . 
+    go test -v .
+```
+
+- test has to live in a file ending in _test.go
+- test usually live right beside the thing being tested
+- any function that is in a file ending in _test.go will not run in test execution
+- unless its name starts with Test followed by something that is not a lowercase letter
