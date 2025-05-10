@@ -35,3 +35,15 @@ Introduction to Testing in Go (Golang)
 - test usually live right beside the thing being tested
 - any function that is in a file ending in _test.go will not run in test execution
 - unless its name starts with Test followed by something that is not a lowercase letter
+
+### test coverage
+
+1. run coverage
+```bash
+    go test -coverprofile=coverage.out 
+```
+3. look at it
+```bash
+    go tool cover -html=coverage.out
+```
+ 
