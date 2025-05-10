@@ -40,10 +40,17 @@ Introduction to Testing in Go (Golang)
 
 1. run coverage
 ```bash
-    go test -coverprofile=coverage.out 
+    go test -coverprofile=coverage.out
+    go test -cover . 
 ```
-3. look at it
+
+2. look at it
 ```bash
     go tool cover -html=coverage.out
+```
+
+3. or set up an alias for this 2
+```bash
+    go test -coverprofile=coverage.out && go tool cover -html=coverage.out
 ```
  
